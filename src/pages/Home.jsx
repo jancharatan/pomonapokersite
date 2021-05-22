@@ -6,7 +6,7 @@ const Home = () => (
         <Header />
         <div className="App-body"> 
             The Pomona Poker Club is a club at <a href="https://www.pomona.edu">Pomona College</a> in Claremont, California 
-            that creates a community for Poker enthusiasts at the Claremont Colleges. The goals of the club is to encourage 
+            that creates a community for Poker enthusiasts at the Claremont Colleges. The goal of the club is to encourage 
             a love of the game of poker and to offer a way for students to better their game. To this end, the club hosts 
             casual games throughout the year, as well as larger tournaments, guest speakers and poker workshops. Additionally, 
             the club has a <a href="/#/team">competitive team</a> that competes in the <a href="https://pokeripa.com">
