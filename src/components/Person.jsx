@@ -22,7 +22,7 @@ const Person = ({ name, hometown, year, major, finishes, image }) => (
             </div>
         </div>
         <div className="Team-picture">
-            <img src={image} alt="playerpic" width="120px" height="120px" />
+            <img src={image} alt="playerpic" className="Player-pic" />
         </div>
     </div>
 )

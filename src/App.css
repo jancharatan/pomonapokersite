@@ -122,12 +122,21 @@
   padding-left: 15px;
 }
 
-@media (max-width : 320px) {
+.Player-pic {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width : 500px) {
   .Person-header {
-    font-size: 12pt;
+    font-size: 10pt;
   }
   .Person-text {
-    font-size: 8pt;
+    font-size: 6pt;
+  }
+  .Player-pic {
+    width: 90px;
+    height: 90px;
   }
 }
 
