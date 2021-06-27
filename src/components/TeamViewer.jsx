@@ -6,6 +6,7 @@ import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import Person from '../components/Person';
 import { Teams } from '../data/teams';
 import PropTypes from 'prop-types';
+import { teamWrapper } from '../data/cssdata';
 
 const TeamViewer = ({ year }) => {
     const [showTeam, setShowTeam] = useState(false);
@@ -23,21 +24,21 @@ const TeamViewer = ({ year }) => {
     }
     return (
     <div>
-        <button onClick={() => setShowTeam(!showTeam)} className="TeamViewer-wrapper">
-            <div className="TeamViewer-bar">
+        <button onClick={() => setShowTeam(!showTeam)} style={Object.assign({}, {borderBottomLeftRadius: `${showTeam ? "0px" : "10px"}`, borderBottomRightRadius: `${showTeam ? "0px" : "10px"}`}, teamWrapper)}>
+            <div style={{color: "white", fontSize: "30px", fontWeight: "bolder", verticalAlign: "center", paddingLeft: "10px", paddingRight: "10px", display: "flex", alignItems: "center"}}>
                 {showTeam ?  <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
             </div>
-            <div className="TeamViewer-bar">
+            <div style={{color: "white", fontSize: "30px", fontWeight: "bolder", verticalAlign: "center", paddingLeft: "10px", paddingRight: "10px", display: "flex", alignItems: "center"}}>
                 {year}
             </div>
         </button>
         {
             showTeam ? 
-            <div className="Team-wrapper">
-                <button onClick={() => subtractCurr()} className={`Team-sidebar ${currPlayer !== 0 ? "Hover-sidebar" : ""}`}>
+            <div style={{width: '100%', height: '150px', display: 'flex', flexDirection: 'row'}}>
+                <button onClick={() => subtractCurr()} style={{borderBottomLeftRadius: '10px'}} className={`Team-sidebar ${currPlayer !== 0 ? "Hover-sidebar" : ""}`}>
                     {currPlayer === 0 ? <div /> : <KeyboardArrowLeftIcon />}
                 </button>
-                <div className="Team-center">
+                <div style={{display: "flex", width: "100%", backgroundColor: "darkgrey", justifyContent: "space-between"}}>
                     <Person 
                         name={team[currPlayer].name} 
                         year={team[currPlayer].year} 
@@ -47,7 +48,7 @@ const TeamViewer = ({ year }) => {
                         image={team[currPlayer].image}
                     />
                 </div>
-                <button onClick={() => addCurr()} className={`Team-sidebar ${currPlayer !== team.length - 1 ? "Hover-sidebar" : ""}`}>
+                <button onClick={() => addCurr()} style={{borderBottomRightRadius: '10px'}} className={`Team-sidebar ${currPlayer !== team.length - 1 ? "Hover-sidebar" : ""}`}>
                     {currPlayer === team.length - 1 ? <div /> : <KeyboardArrowRightIcon />}
                 </button>
             </div> :

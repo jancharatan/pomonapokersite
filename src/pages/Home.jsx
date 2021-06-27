@@ -1,20 +1,33 @@
 import React from 'react';
-import Header from '../components/Header';
+import ParticleBackground from '../components/ParticleBackground';
+import { Button } from 'react-bootstrap';
+
 
 const Home = () => (
     <div>
-        <Header />
-        <div className="App-body"> 
-            The Pomona Poker Club is a club at <a href="https://www.pomona.edu">Pomona College</a> in Claremont, California 
-            that creates a community for Poker enthusiasts at the Claremont Colleges. The goal of the club is to encourage 
-            a love of the game of poker and to offer a way for students to better their game. To this end, the club hosts 
-            casual games throughout the year, as well as larger tournaments, guest speakers and poker workshops. Additionally, 
-            the club has a <a href="/#/team">competitive team</a> that competes in the <a href="https://pokeripa.com">
-            Intercollegiate Poker Association</a>'s league. The club also sends players to various events such as the <a href="https://www.pokercsop.com">Collegiate Series of Poker</a>. 
-            The president of the club is Kevin Wu (Econ '23) and the vice president is Jan Charatan (CS '23). This website was built using React.js by Jan Charatan.
-        </div>
-    </div>
-    
+        <ParticleBackground />
+        <div style={{position: 'absolute', top: '30px'}}>
+            <div style={{marginLeft: '4vw', marginRight: '4vw', display: 'flex', flexDirection: 'row'}}>
+                <div style={{fontFamily: 'Work Sans', fontSize: '7vw', fontWeight: '900', color: 'white'}}>
+                    Claremont Poker Club ♠️
+                </div>
+            </div>
+            <div style={{fontFamily: 'Work Sans', fontSize: '3.5vw', marginLeft: '4vw', marginRight: '4vw', fontWeight: '300', color: 'white'}}>
+                A club at the Claremont Colleges dedicated to teaching risk assessment and financial literacy through the beautiful game of poker.
+            </div>
+            <div style={{marginLeft: '4vw', marginRight: '4vw', marginTop: '4vw'}}>
+                <Button onClick={() => window.location.assign("/#/about")} variant="light" size="sm" style={{fontSize: "3vw", width: "18vw", height: "9vw", fontFamily: 'Work Sans'}}>
+                    About
+                </Button>
+                <Button onClick={() => window.location.assign("/#/team")} variant="light" size="sm" style={{fontSize: "3vw", marginLeft: "4vw", width: "18vw", height: "9vw", fontFamily: 'Work Sans'}}>
+                    Team
+                </Button>
+                <Button onClick={() => window.location.assign("/#/sponsors")} variant="light" size="sm" style={{fontSize: "3vw", marginLeft: "4vw", width: "18vw", height: "9vw", fontFamily: 'Work Sans'}}>
+                    Sponsors
+                </Button>
+            </div>
+        </div> 
+    </div>   
 )
 
 export default Home;
