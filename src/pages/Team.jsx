@@ -2,20 +2,20 @@ import React from 'react';
 import ParticleBackground from '../components/ParticleBackground';
 import Header from '../components/Header';
 import TeamViewer from '../components/TeamViewer';
-import { bodyText, headerText, topItem, bodyLinkText } from '../data/cssdata';
+import { bodyText, topItem, bodyLinkText } from '../data/cssdata';
 
 const Team = () => (
-    <div>
+    <div style={{marginBottom: '50px'}}>
         <ParticleBackground />
         <Header />
-        <div style={Object.assign({}, headerText, topItem)}>
+        <div className="header-text" style={topItem}>
             Leadership Team ✏️
         </div>
         <div style={bodyText}>
             Our leadership team is made up of Kevin Wu, (PO '23, President), Jan Charatan (PO '23, Vice President) and Owen
             Sherry (PO '23, Chief Operating Officer). If you're interested in joining the leadership team, please reach out!
         </div>
-        <div style={Object.assign({}, headerText, topItem)}>
+        <div className="header-text" style={topItem}>
             Competitive Team 🏆
         </div>
         <div style={bodyText}>

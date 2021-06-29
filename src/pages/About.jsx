@@ -1,13 +1,14 @@
 import React from 'react';
 import ParticleBackground from '../components/ParticleBackground';
 import Header from '../components/Header';
-import { bodyText, headerText, topItem, bodyLinkText } from '../data/cssdata';
+import { bodyText, topItem, bodyLinkText } from '../data/cssdata';
+import '../App.css';
 
 const About = () => (
     <div style={{marginBottom: '50px'}}>
         <ParticleBackground />
         <Header />
-        <div style={Object.assign({}, headerText, topItem)}>
+        <div className="header-text" style={topItem}>
             Who Are We? 🤔
         </div>
         <div style={bodyText}>
@@ -18,7 +19,7 @@ const About = () => (
             various events such as the <a style={bodyLinkText} href="https://www.pokercsop.com">Collegiate Series of Poker</a> and has a competitive team 
             that competes in the <a style={bodyLinkText} href="https://pokeripa.com">Intercollegiate Poker Association</a>'s league.
         </div>
-        <div style={Object.assign({}, headerText, topItem)}>
+        <div className="header-text" style={topItem}>
             Who Can I Contact? 📲
         </div>
         <div style={bodyText}> 
@@ -27,7 +28,7 @@ const About = () => (
             We are always looking for sponsorship opportunities and partnerships with clubs at other colleges and universities. If you have a reason to reach out,
             we're probably interested!
         </div>
-        <div style={Object.assign({}, headerText, topItem)}>
+        <div className="header-text" style={topItem}>
             How Do I Join? 👥
         </div>
         <div style={bodyText}> 

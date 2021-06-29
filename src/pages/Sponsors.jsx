@@ -3,7 +3,8 @@ import ParticleBackground from '../components/ParticleBackground';
 import Header from '../components/Header';
 import SponsorPane from '../components/SponsorPane';
 import { sponsors } from '../data/sponsors';
-import { bodyText, headerText, topItem, bodyLinkText } from '../data/cssdata';
+import { bodyText, topItem, bodyLinkText } from '../data/cssdata';
+import '../App.css';
 
 const Sponsors = () => {
     
@@ -11,13 +12,13 @@ const Sponsors = () => {
         <div style={{marginBottom: '50px'}}>
             <ParticleBackground />
             <Header />
-            <div style={Object.assign({}, headerText, topItem)}>
+            <div className="header-text" style={topItem}>
                 Current Sponsors 💸
             </div>
             <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', marginLeft: '4vw', marginRight: '4vw', marginTop: '1vw'}}>
                 {sponsors.map(sponsor => (<SponsorPane companyName={sponsor.companyName} image={sponsor.image} description={sponsor.description} link={sponsor.link} />))}
             </div>
-            <div style={Object.assign({}, headerText, topItem)}>
+            <div className="header-text" style={topItem}>
                 Sponsor Us? 🤝
             </div>
             <div style={bodyText}> 

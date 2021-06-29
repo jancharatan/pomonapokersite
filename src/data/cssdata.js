@@ -7,25 +7,8 @@ const bodyText = {
     color: 'white'
 };
 
-const headerText = {
-    fontFamily: 'Work Sans', 
-    marginLeft: '4vw', 
-    marginRight: '4vw', 
-    fontSize: '24pt', 
-    fontWeight: '900', 
-    color: 'white'
-};
-
 const topItem = {
     marginTop: '30px'
-};
-
-const navbarText = {
-    fontFamily: 'Work Sans',
-    color: 'white',
-    fontWeight: '900',
-    fontSize: '24pt',
-    textDecoration: 'none'
 };
 
 const bodyLinkText = {
@@ -51,4 +34,4 @@ const teamWrapper = {
     alignItems: "center"
 }
 
-export { bodyText, headerText, topItem, navbarText, bodyLinkText, teamWrapper };
+export { bodyText, topItem, bodyLinkText, teamWrapper };

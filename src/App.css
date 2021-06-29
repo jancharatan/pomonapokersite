@@ -1,6 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;900&display=swap');
 @import "bootstrap/dist/css/bootstrap.css";
 
+.navbar-text {
+  font-family: 'Work Sans';
+  color: white;
+  font-weight: 900;
+  font-size: 24pt;
+  text-decoration: none;
+};
+
+.icon-header {
+  height: 30px;
+  width: 30px;
+}
+
+.person-font-large {
+  font-size: 18pt;
+}
+
+.person-font-small {
+  font-size: 12pt;
+}
+
+.player-pic {
+  width: 120px;
+  height: 120px;
+}
+
+.header-text {
+  font-family: 'Work Sans'; 
+  margin-left: 4vw;
+  margin-right: 4vw; 
+  font-size: 24pt;
+  font-weight: 900; 
+  color: white;
+}
+
+.navbar-width {
+  width: 500px;
+}
+
+@media (max-width: 500px) {
+  .navbar-text {
+    font-size: 12pt;
+  }  
+  .icon-header {
+    height: 15px;
+    width: 15px;
+  }
+
+  .person-font-large {
+    font-size: 10pt;
+  }
+  
+  .person-font-small {
+    font-size: 6pt;
+  }
+
+  .player-pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-text {
+    font-size: 16pt;
+  }
+
+  .navbar-width {
+    width: 300px;
+  }
+}
+
 .Team-sidebar {
   display: flex;
   flex-direction: row;
