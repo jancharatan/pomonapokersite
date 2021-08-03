@@ -11,5 +11,11 @@ export const sponsors = [
         link: "https://www.twosigma.com",
         description: "Two Sigma's scientists bring rigorous inquiry, data analysis, and invention to help solve the toughest challenges across financial services."
 
+    },
+    {
+        companyName: "SIG",
+        image: "assets/sponsorLogos/sigLogo.png",
+        link: "https://sig.com",
+        description: "SIG is a global quantitative trading firm founded with an entrepreneurial mindset and a rigorous analytical approach to decision making."
     }
 ];
