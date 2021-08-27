@@ -17,5 +17,11 @@ export const sponsors = [
         image: "assets/sponsorLogos/sigLogo.png",
         link: "https://sig.com",
         description: "SIG is a global quantitative trading firm founded with an entrepreneurial mindset and a rigorous analytical approach to decision making."
+    },
+    {
+        companyName: "Jane Street",
+        image: "assets/sponsorLogos/janeStreetLogo.png",
+        link: "https://janestreet.com",
+        description: "Jane Street is a quantitative trading firm with a unique focus on technology and collaborative problem solving."
     }
 ];
