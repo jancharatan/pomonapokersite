@@ -1,9 +1,9 @@
 export const sponsors = [
     {
-        companyName: "Numerade",
-        image: "assets/sponsorLogos/numeradeLogo.png",
-        link: "https://www.numerade.com",
-        description: "Numerade is a venture-backed, high-growth education technology startup based in Los Angeles."
+        companyName: "Zogo",
+        image: "assets/sponsorLogos/zogoLogo.png",
+        link: "https://www.zogofinance.com",
+        description: "Zogo is the #1 app that helps Gen-Z improve their financial literacy."
     },
     {
         companyName: "Two Sigma",
